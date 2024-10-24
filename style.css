@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url('your-background-image.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(30%);
+    position: absolute;
+}
+
+.form-box {
+    background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Place the form box above the blurred background */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #007BFF; /* Change border color on focus */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.social-login {
+    margin: 20px 0;
+}
+
+.social-login h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center; /* Center align the buttons */
+}
+
+.social-btn {
+    width: 40px; /* Small width for round buttons */
+    height: 40px; /* Small height for round buttons */
+    border-radius: 50%; /* Make buttons round */
+    border: none;
+    color: white;
+    font-size: 18px; /* Adjust font size */
+    margin: 0 5px; /* Add margin between buttons */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+/* Adjust background colors */
+.facebook { background-color: #3b5998; }
+.instagram { background-color: #c32aa3; }
+.apple { background-color: #000; }
+.x { background-color: #1da1f2; } /* Formerly Twitter */
+.google { background-color: #db4437; }
+
+/* Add hover effect */
+.social-btn:hover {
+    opacity: 0.8; /* Slightly darken button on hover */
+}
+
+p {
+    margin-top: 10px;
+    color: #666;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
